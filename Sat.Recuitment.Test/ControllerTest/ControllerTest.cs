@@ -4,22 +4,24 @@ using Sat.Recruitment.Library.Generic;
 using Sat.Recruitment.Library.UserModel;
 using Xunit;
 
-namespace Sat.Recuitment.Test
+namespace Sat.Recuitment.Test.ControllerTest
 {
     public class ControllerTest
     {
         [Fact]
-        public void Create_NormalUser() {
+        public void Create_NormalUser()
+        {
 
             // Arrange
-            var expected=(new Result()
+            var expected = new Result()
             {
                 Message = "User Created",
                 IsSuccess = true
-            });
+            };
 
             // Act
-            var userModel = new UserInputModel() {
+            var userModel = new UserInputModel()
+            {
                 Name = "Sebatian",
                 Email = "gariglio+test@gmail.com",
                 Address = "Colon 744",
@@ -27,7 +29,7 @@ namespace Sat.Recuitment.Test
                 UserType  = "Normal",
                 Money= "100",
             };
-            
+
             var userController = new UsersController();
             var result = userController.CreateUser(userModel);
             //var result = userController.CreateUser();
@@ -43,10 +45,10 @@ namespace Sat.Recuitment.Test
         public void Create_DuplicatedByPhone()
         {
             // Arrange
-            var expected = (new Result()
+            var expected = new Result()
             {
                 Message = "The user is duplicated"
-            });
+            };
 
             // Act
             var userModel = new UserInputModel()
@@ -73,10 +75,10 @@ namespace Sat.Recuitment.Test
         public void Create_Duplicated_ByNameAndress()
         {
             // Arrange
-            var expected = (new Result()
+            var expected = new Result()
             {
                 Message = "The user is duplicated"
-            });
+            };
 
             // Act
             var userModel = new UserInputModel()
@@ -103,7 +105,8 @@ namespace Sat.Recuitment.Test
         public void Create_ErrorByNullName()
         {
             // Arrange
-            var expected = new Result() {
+            var expected = new Result()
+            {
                 Message="The name is required"
             };
 

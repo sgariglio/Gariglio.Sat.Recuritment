@@ -23,4 +23,10 @@
     <ProjectReference Include="..\Sat.Recruitment.Gariglio\Sat.Recruitment.Gariglio.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Files\Users.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

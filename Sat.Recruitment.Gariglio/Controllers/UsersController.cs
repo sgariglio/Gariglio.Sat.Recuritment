@@ -1,29 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Sat.Recruitment.Library.Factory;
-using Sat.Recruitment.Library.Generic;
 using Sat.Recruitment.Library.UserModel;
-using System.Diagnostics;
 
 namespace Sat.Recruitment.Api.Controllers
 {
-
-
     [ApiController]
     [Route("[controller]")]
     public partial class UsersController : ControllerBase
     {
-        public UsersController()
-        {
-        }
-
         [HttpPost]
         [Route("/create-user")]
         public IActionResult CreateUser(IUserInputModel model)
         {
             var response = FactoryResponse.responseCreate();
             var newUser = Factory.UserInit(model);
+
+            //input errors
             if (newUser.validatorEngine.ValidateErrors().IsSuccess==false) return Ok(newUser.validatorEngine.ValidateErrors());
 
+            //duplicated
             var isDuplicated = newUser.validatorEngine.DuplicatedVerify();
             if (!isDuplicated)
             {
