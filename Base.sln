@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32408.312
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "Base.csproj", "{27ADAB4F-BDE0-457A-8606-166EABC711DD}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sat.Recruitment.Gariglio", "Sat.Recruitment.Gariglio\Sat.Recruitment.Gariglio.csproj", "{36D73321-B84B-49DC-924A-0AB00CF2EED4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sat.Recruitment.Library", "Sat.Recruitment.Library\Sat.Recruitment.Library.csproj", "{8836448B-D996-49A5-8EDD-4BDCBCB9BC64}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sat.Recuitment.Test", "Sat.Recuitment.Test\Sat.Recuitment.Test.csproj", "{000E2D80-E792-4CE7-9E1C-C3037276BB11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sat.Recruitment.Console", "..\Sat.Recruitment.Console\Sat.Recruitment.Console.csproj", "{D53F022F-BDF7-4535-8DC5-0E2133398526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{27ADAB4F-BDE0-457A-8606-166EABC711DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27ADAB4F-BDE0-457A-8606-166EABC711DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27ADAB4F-BDE0-457A-8606-166EABC711DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27ADAB4F-BDE0-457A-8606-166EABC711DD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36D73321-B84B-49DC-924A-0AB00CF2EED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36D73321-B84B-49DC-924A-0AB00CF2EED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36D73321-B84B-49DC-924A-0AB00CF2EED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{000E2D80-E792-4CE7-9E1C-C3037276BB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{000E2D80-E792-4CE7-9E1C-C3037276BB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{000E2D80-E792-4CE7-9E1C-C3037276BB11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53F022F-BDF7-4535-8DC5-0E2133398526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53F022F-BDF7-4535-8DC5-0E2133398526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53F022F-BDF7-4535-8DC5-0E2133398526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53F022F-BDF7-4535-8DC5-0E2133398526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

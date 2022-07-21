@@ -6,10 +6,8 @@ namespace Sat.Recruitment.Library.ValidatorEngine
 {
     public class UserValidatorEngine : IUserValidatorEngine
     {
-
         private IUser user;
         private List<IUser> usersInRepository;
-
         private string EmailNormalized { get; set; }
 
         public UserValidatorEngine(IUser user, List<IUser> users)
