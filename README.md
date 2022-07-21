@@ -25,6 +25,9 @@
 * Pruebas unitarias para probar los distintos tipos usuarios (Normal, SuperUser, Premium)
 * Las soluciones presentadas revelan la intención de solución. Es posible seguir desarrollando la solución.
 
+# Consideraciones
+* Existe una propiedad "EmailNormalized" dentro de la clase "UserValidationEngine". Esto es a consideración que es una propiedad auxiliar de la validación. Su valor nunca será almacenado en la base de datos. Si la documentación especifica que el email del usuario sera guardado de forma normalizada, migragriamos la función hacia la clase User. 
+
 # Agradecimientos
 * Agradezco la oportunidad otorgada de realizar la prueba Sat.Recruiment. 
 * He encontrado el desafio muy interesante debedio a la libertad de acción. 
