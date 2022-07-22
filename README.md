@@ -41,7 +41,9 @@
 * HTML
 * Boostrap
 * CSS
+* Arduino
 * Andoid-Kotlin
+
 
 # Contacto
 * sebastian.gariglio@gmail.com
