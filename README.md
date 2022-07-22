@@ -33,5 +33,15 @@
 * He encontrado el desafio muy interesante debedio a la libertad de acción. 
 * Estaria encantado de trabajar en un entorno que siga desafiendo mis conceptos de código prolijo, reutilizable y legible. 
 
+# Sebastián Gariglio
+* Angular
+* C# 
+* Microsoft SQL
+* Firebase - BD no relacionales
+* HTML
+* Boostrap
+* CSS
+* Andoid-Kotlin
+
 # Contacto
 * sebastian.gariglio@gmail.com
